@@ -1,0 +1,26 @@
+{
+  //必要
+  "name": "ImUrFbFather",
+  "version": "1.0.0",
+  "manifest_version": 2,
+
+  //非必要
+  "description": "CloseUrFbWall",
+  "icons": {
+    "48": "icon_48.png",
+    "128": "icon_128.png"
+  },
+
+  //content
+  //"background": {
+  //  "persistent": false,
+  //  "scripts": ["jquery-2.0.3.js","background.js"]
+  //},
+  "content_scripts": [
+    {
+      "matches": ["http://www.facebook.com/","https://www.facebook.com/*"],
+      "css":["ImUrFbFather.css"],
+      "js": ["jquery-2.0.3.js","myscript.js"]
+    }
+  ]
+}
